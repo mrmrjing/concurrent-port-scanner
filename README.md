@@ -15,8 +15,7 @@ Before you start using the Concurrent Port Scanner, you need to have Go installe
 ## Installation
 Clone the repository or download the source code to your local machine:
 ```bash
-git clone https://example.com/concurrent-port-scanner.git
-cd concurrent-port-scanner
+git clone https://github.com/mrmrjing/concurrent-port-scanner.git
 ```
 To build the project, run: 
 ```bash
@@ -27,7 +26,7 @@ This command will compile the source code and create an executable file in the s
 ## Usage 
 Run the scanner using the following command: 
 ```bash
-./scanner.go -p [port_ranges] [hosts]
+./ConcurrentPortScanner -p [port_ranges] [hosts]
 ```
 `[port_ranges]` should be specified in the format 22-25,80,8080 to represent ranges and specific ports.
 `[hosts]` can be a single IP, multiple IPs separated by commas, or a CIDR notation.
@@ -35,7 +34,7 @@ Run the scanner using the following command:
 ### Example
 To scan ports 22 to 25 and port 80 on all IPs in the subnet 192.168.0.1/24: 
 ```bash 
-./scanner.go -p 22-25,80 192.168.0.1/24
+./ConcurrentPortScanner -p 22-25,80 192.168.0.1/24
 ```
 
 ## Output 
